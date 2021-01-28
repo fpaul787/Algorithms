@@ -133,6 +133,8 @@ public class BinarySearchTree {
         node.right = remove(node.right, tmp.data);
       }
     }
+
+    return node;
   }
 
   // Helper method to find the leftmost node (which has the smallest value)
