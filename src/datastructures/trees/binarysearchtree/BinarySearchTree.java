@@ -32,7 +32,7 @@ public class BinarySearchTree {
 
   // Add an element to this binary tree. Returns true
   // if we successfully perform an insertion
-  public boolean add(T elem) {
+  public boolean add(int elem) {
 
     // Check if the value already exists in this
     // binary tree, if it does ignore adding it
@@ -155,11 +155,11 @@ public class BinarySearchTree {
 
   // returns true is the element exists in the tree
   public boolean contains(int elem){
-    return contains(root, elem)
+    return contains(root, elem);
   }
 
   // Private recursive method to find an element in the tree
-  private boolean contains(Node node, T elem) {
+  private boolean contains(Node node, int elem) {
 
     // Base case: reached bottom, value not found
     if (node == null) {
